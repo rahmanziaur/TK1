@@ -5,9 +5,9 @@ import tkinter as tk
 r = tk.Tk()  #constructor of TKinter
 
 # root window title and dimension
-r.title("Welcome 49!")
+r.title("Welcome 50!")
 # Set geometry(widthxheight)
-r.geometry('350x200')
+r.geometry('700x400')
 
 # adding a label to the root window
 l = tk.Label(r, text ="Testing our first GUI!!")
