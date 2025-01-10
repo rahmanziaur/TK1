@@ -1,29 +1,29 @@
 # Import Module
-from tkinter import *
+import tkinter as tk
 
 # create root window
-root = Tk()
+r = tk.Tk()  #constructor of TKinter
 
 # root window title and dimension
-root.title("Welcome to GeekForGeeks")
+r.title("Welcome 49!")
 # Set geometry(widthxheight)
-root.geometry('350x200')
+r.geometry('350x200')
 
 # adding a label to the root window
-lbl = Label(root, text = "Are you a Geek?")
-lbl.grid()
+l = tk.Label(r, text ="Testing our first GUI!!")
+l.grid()
 
 # function to display text when
 # button is clicked
 def clicked():
-    lbl.configure(text = "I just got clicked")
+    l.configure(text = "I just got clicked")
 
 # button widget with red color text
 # inside
-btn = Button(root, text = "Click me" ,
+b = tk.Button(r, text = "Click me" ,
              fg = "red", command=clicked)
 # set Button grid
-btn.grid(column=1, row=0)
+(b.grid(column=1, row=0))
 
 # Execute Tkinter
-root.mainloop()
+(r.mainloop())
